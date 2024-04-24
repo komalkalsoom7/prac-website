@@ -1,0 +1,37 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav .navbar{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(229, 234, 237);
+}
+nav .menu ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav .menu ul a{
+    text-decoration: none;
+    color: #686464;
+}
+nav .button button{
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: white;
+    background: linear-gradient(90deg, #4ee2d6eb 7%, #1bc3e5 100%);
+}
+
+nav .menu ul a:hover{
+    color: #0a0a0a;
+    border-bottom:2px solid #1bc3e5 ;
+}
