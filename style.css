@@ -88,7 +88,7 @@ nav .menu ul a {
     padding: 10px 30px;
     color: white;
     transition: ease-in 0.5s;
-    background: linear-gradient(to right, var(--BrightCyan) , var(--LimeGreen) );
+    background: linear-gradient(to right, var(--BrightCyan), var(--LimeGreen));
 }
 
 .button button:hover {
@@ -96,39 +96,53 @@ nav .menu ul a {
     border-radius: 30px;
     padding: 10px 30px;
     color: white;
-    background: linear-gradient(to right, var(--LimeGreen) , var(--BrightCyan) );
+    background: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
 }
 
 nav .menu ul a:hover {
     border-bottom: 3px solid var(--BrightCyan);
 }
 
-/* banner part */
-.container{
+
+/* ================================ */
+.container {
     width: 80%;
     margin: 0 auto;
 }
-.main{
+
+/* =============================== */
+/* banner part */
+.main {
     /* width: 100%; */
     height: calc(100vh - 80px);
     display: flex;
-    
+   
+
+
 }
-.main .main-content{
+
+.main .main-content {
     width: 40%;
     padding: 50px 0px;
 }
-.main-content h1, p, .btn{
+
+.main-content h1,
+p,
+.btn {
     margin-top: 25px;
 }
-.main-content h1{
-   font-size: 60px;
+
+.main-content h1 {
+    font-size: 60px;
 }
-.main .main-img{
+
+.main .main-img {
+    
     width: 60%;
     padding: 30px 0 0 40px;
 }
-.main .main-img img{
+
+.main .main-img img {
     width: 100%;
     height: 80%;
 }
