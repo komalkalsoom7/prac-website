@@ -1,6 +1,7 @@
-
-@media(max-width:600px){
-    nav .menu{
+@media(max-width:900px) {
+    nav .menu {
         display: none;
     }
+
+
 }

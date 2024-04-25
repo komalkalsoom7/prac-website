@@ -54,12 +54,16 @@ body {
     font-size: 18px
 }
 
+/* nav{
+    background-color: #eee7e7;
+    
+} */
 
-nav .navbar {
+.navbar {
     display: flex;
     width: 100%;
     height: 80px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /* background-color: #eee7e7; */
 }
@@ -78,21 +82,21 @@ nav .menu ul a {
     transition: ease-in 0.5s;
 }
 
-nav .button button {
+.button button {
     border: none;
     border-radius: 30px;
     padding: 10px 30px;
     color: white;
     transition: ease-in 0.5s;
-    background: linear-gradient(to right, var(--BrightCyan) 7%, var(--LimeGreen) 100%);
+    background: linear-gradient(to right, var(--BrightCyan) , var(--LimeGreen) );
 }
 
-nav .button button:hover {
+.button button:hover {
     border: none;
     border-radius: 30px;
     padding: 10px 30px;
     color: white;
-    background: linear-gradient(to right, var(--LimeGreen) 7%, var(--BrightCyan) 100%);
+    background: linear-gradient(to right, var(--LimeGreen) , var(--BrightCyan) );
 }
 
 nav .menu ul a:hover {
@@ -103,4 +107,28 @@ nav .menu ul a:hover {
 .container{
     width: 80%;
     margin: 0 auto;
+}
+.main{
+    /* width: 100%; */
+    height: calc(100vh - 80px);
+    display: flex;
+    
+}
+.main .main-content{
+    width: 40%;
+    padding: 50px 0px;
+}
+.main-content h1, p, .btn{
+    margin-top: 25px;
+}
+.main-content h1{
+   font-size: 60px;
+}
+.main .main-img{
+    width: 60%;
+    padding: 30px 0 0 40px;
+}
+.main .main-img img{
+    width: 100%;
+    height: 80%;
 }
