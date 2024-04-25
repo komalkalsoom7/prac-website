@@ -1,37 +1,106 @@
+/* 
+
+## Colors
+
+### Primary
+
+- Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+
+### Neutral
+
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
+- Weights: 300, 400, 700 */
 
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,700;1,700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
 }
 
-nav .navbar{
+:root {
+    /* primary color */
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    /* Neutral */
+
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+
+    font-size: 18px
+}
+
+
+nav .navbar {
     display: flex;
     width: 100%;
     height: 80px;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(229, 234, 237);
+    /* background-color: #eee7e7; */
 }
-nav .menu ul{
+
+nav .menu ul {
     list-style: none;
     display: flex;
     gap: 30px;
 }
-nav .menu ul a{
+
+nav .menu ul a {
     text-decoration: none;
     color: #686464;
+    padding: 28px 0;
+    border-bottom: 2px solid var(--White);
+    transition: ease-in 0.5s;
 }
-nav .button button{
+
+nav .button button {
     border: none;
     border-radius: 30px;
     padding: 10px 30px;
     color: white;
-    background: linear-gradient(90deg, #4ee2d6eb 7%, #1bc3e5 100%);
+    transition: ease-in 0.5s;
+    background: linear-gradient(to right, var(--BrightCyan) 7%, var(--LimeGreen) 100%);
 }
 
-nav .menu ul a:hover{
-    color: #0a0a0a;
-    border-bottom:2px solid #1bc3e5 ;
+nav .button button:hover {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: white;
+    background: linear-gradient(to right, var(--LimeGreen) 7%, var(--BrightCyan) 100%);
+}
+
+nav .menu ul a:hover {
+    border-bottom: 3px solid var(--BrightCyan);
+}
+
+/* banner part */
+.container{
+    width: 80%;
+    margin: 0 auto;
 }
