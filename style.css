@@ -238,17 +238,14 @@ img {
 
 /* main section two*/
 
-.main-section-two{
+ .main-section-two{
     background-color: var(--VeryLightGray);
    padding: 50px 0;
 }
 
-.main-two-text h1{
-    font-size: 40px;
-}
 .cart-main{
     background-color: var(--White);
-}
+} 
 .cart-inner{
     padding: 0px 20px;
 }
@@ -257,4 +254,10 @@ img {
 }
 .cart-inner h5{
    color: var(--GrayishBlue);
+ }
+ .cart-main{
+    border-radius: 10px;
+ }
+ .cart-main img{
+    border-radius: 10px;
  }
