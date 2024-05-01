@@ -95,7 +95,10 @@ img {
 /* navbar css start */
 .nav-section{
     background-color: var(--White);
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 1;
     padding: 25px 0;
 }
@@ -151,7 +154,7 @@ img {
 /* banner section start */
 .header-section {
     background-color: var(--VeryLightGray);
-    padding-bottom: 10px;
+    padding-bottom: 100px;
 }
 
 .header-wrapper {
@@ -164,7 +167,17 @@ img {
     flex: 1 0 40%;
   
 }
-
+.header-text h1{
+    font-size: 50px;
+   
+}
+.header-text p{
+    font-size: 19px;
+   color: var(--GrayishBlue);
+}
+.header-text ,h1,p{
+    padding-bottom: 30px;
+}
 .header-img {
     flex: 1 0 60%;
     position: relative;
@@ -173,7 +186,7 @@ img {
 
 .header-img img:first-child {
     position: relative;
-    top: -62px;
+    top: 24px;
     bottom: 0;
     right: -150px;
     transform: scale(1.5);
@@ -182,9 +195,42 @@ img {
 .header-img img:last-child {
     position: absolute;
     right: -175px;
-    bottom: -160px;
+    bottom: -239px;
     transform: scale(1);
 
 }
 
 /* banner section end */
+
+
+/* main section */
+.main-section{
+    padding: 100px 0;
+}
+.main-text{
+    width: 655px;
+    padding-bottom: 20px;
+}
+.main-text h1{
+   
+    font-size: 40px;
+}
+.main-text p{
+   
+    color: var(--GrayishBlue);
+}
+.main-cart{
+    display: flex;
+}
+.main-cart .cart{
+    width: 300px;
+}
+.main-cart .cart p{
+    color: var(--GrayishBlue);
+}
+.main-cart .cart img,h1{
+    padding-bottom: 20px;
+}
+.main-cart > * + *{
+    margin-left: 30px;
+}
