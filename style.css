@@ -203,8 +203,8 @@ img {
 /* banner section end */
 
 
-/* main section */
-.main-section{
+/* main section one*/
+.main-section-one{
     padding: 100px 0;
 }
 .main-text{
@@ -221,6 +221,7 @@ img {
 }
 .main-cart{
     display: flex;
+    /* justify-content: space-between; */
 }
 .main-cart .cart{
     width: 300px;
@@ -234,3 +235,26 @@ img {
 .main-cart > * + *{
     margin-left: 30px;
 }
+
+/* main section two*/
+
+.main-section-two{
+    background-color: var(--VeryLightGray);
+   padding: 50px 0;
+}
+
+.main-two-text h1{
+    font-size: 40px;
+}
+.cart-main{
+    background-color: var(--White);
+}
+.cart-inner{
+    padding: 0px 20px;
+}
+.cart-inner,h5,h3{
+   padding-bottom: 10px;
+}
+.cart-inner h5{
+   color: var(--GrayishBlue);
+ }
